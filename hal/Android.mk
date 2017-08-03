@@ -133,7 +133,7 @@ SUPL_SOURCE_FILES := \
 	ubx_niIf.cpp
 
 LOCAL_SRC_FILES += $(SUPL_SOURCE_FILES)
-LOCAL_CFLAGS += -DSUPL_ENABLED
+LOCAL_CFLAGS += -DSUPL_ENABLED -Wno-error=date-time
 # LOCAL_CFLAGS += -UNDEBUG
 
 # Uncomment the line below for test with SUPL Test suite
